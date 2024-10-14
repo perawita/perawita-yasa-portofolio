@@ -1,13 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-export async function GET(req: Request) {
-  return NextResponse.json(
-    { message: "Ini respone method GET" },
-    { status: 200 }
-  );
-}
-
 export async function POST(req: Request) {
   try {
     const { name, email, message } = await req.json();

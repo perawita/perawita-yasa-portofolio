@@ -63,7 +63,7 @@ export default function About() {
             <br />
 
             <div className="text-lg font-semibold">
-                <Title children={"My Reads."} />
+                <Title>My Reads.</Title>
             </div>
 
             <div className="border-l-2 border-gray-500 space-y-4">
