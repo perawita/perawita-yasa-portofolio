@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/button";
 import Title from "@/components/stack";
 import gsap from "gsap";
@@ -19,8 +19,8 @@ export default function Contact() {
             opacity: 1,
             delay: 0.5,
             ease: 'back.in'
-        })
-    }, [])
+        });
+    }, []);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;

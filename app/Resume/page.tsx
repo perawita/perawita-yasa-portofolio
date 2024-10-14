@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Button } from "@/components/button";
 import Title from "@/components/stack";
 import gsap from "gsap";
@@ -13,8 +13,8 @@ export default function Resume() {
             opacity: 1,
             delay: 0.5,
             ease: 'back.in'
-        })
-    }, [])
+        });
+    }, []);
 
     return (
         <section className="text-left space-y-6">

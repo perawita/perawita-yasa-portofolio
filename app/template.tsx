@@ -12,41 +12,41 @@ const navigationButton = {
     Project: '/Project',
     Resume: '/Resume',
     Contact: '/Contact',
-}
+};
 
 export default function HomeTemplate({ children }: { children: React.ReactNode }) {
-    const navButton: Record<string, string> = navigationButton
+    const navButton: Record<string, string> = navigationButton;
 
-    const [openMenu, setOpenMenu] = useState(false)
-    const pathname = usePathname()
+    const [openMenu, setOpenMenu] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         if (document.body.style.overflow === 'hidden') {
             document.body.style.overflow = ''
         }
-    }, [])
+    }, []);
 
     const handleMenu = () => {
         setOpenMenu(!openMenu)
         const menu = document.getElementById('mobileMenu')
         if (openMenu) {
-            document.body.style.overflow = 'hidden'
-            menu?.classList.remove('hidden')
+            document.body.style.overflow = 'hidden';
+            menu?.classList.remove('hidden');
             gsap.to('.mobileMenu', {
                 x: 0,
                 duration: 1,
                 opacity: 1,
                 ease: 'bounce.in'
-            })
+            });
         } else {
-            document.body.style.overflow = ''
-            menu?.classList.add('hidden')
+            document.body.style.overflow = '';
+            menu?.classList.add('hidden');
             gsap.to('.mobileMenu', {
                 x: 0,
                 duration: 1,
                 opacity: 0,
                 ease: 'bounce.out'
-            })
+            });
         }
     }
 

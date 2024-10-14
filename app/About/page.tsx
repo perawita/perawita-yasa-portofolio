@@ -1,11 +1,8 @@
 "use client";
-
-
 import { Button } from "@/components/button";
 import Title from "@/components/stack";
 
 export default function About() {
-
     return (
         <section className="text-left space-y-6">
             <div className="text-lg font-semibold">

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, {useEffect } from "react";
 import { LayoutGrid } from "@/components/ui/layout-grid";
 
 import { Button } from "@/components/button";
@@ -15,8 +15,8 @@ export default function Project() {
             opacity: 1,
             delay: 0.5,
             ease: 'back.in'
-        })
-    }, [])
+        });
+    }, []);
 
     return (
         <section className="text-left space-y-6">
