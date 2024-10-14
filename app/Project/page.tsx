@@ -36,7 +36,7 @@ export default function Project() {
                 </a>
             </div>
 
-            <div className="project opacity-0 h-screen w-full">
+            <div className="project h-screen w-full">
                 <LayoutGrid cards={cards} />
             </div>
 
