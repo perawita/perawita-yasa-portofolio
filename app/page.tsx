@@ -11,7 +11,7 @@ export default function FrontPages() {
 
   return (
     <section className="text-left space-y-6">
-      <Title children={"I'M IDA BAGUS PERAWITA YASA"} />
+      <Title>I'M IDA BAGUS PERAWITA YASA</Title>
 
       {/* Menerapkan animasi pada setiap paragraf */}
       {texts.map((text, index) => (

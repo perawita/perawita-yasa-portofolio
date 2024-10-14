@@ -63,7 +63,7 @@ export default function Contact() {
     return (
         <section className="text-left space-y-6">
             <div className="text-lg">
-                <Title children={"Contact."} />
+                <Title>Contact.</Title>
                 <p
                     key={0}
                     className="px-3 paragraf text-white text-lg"

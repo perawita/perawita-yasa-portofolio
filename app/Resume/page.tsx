@@ -18,7 +18,7 @@ export default function Resume() {
 
     return (
         <section className="text-left space-y-6">
-            <Title children={"Resume."} />
+            <Title>Resume.</Title>
             <div className="flex text-lg">
                 <p
                     key={0}

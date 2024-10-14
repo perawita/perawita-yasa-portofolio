@@ -6,7 +6,7 @@ export default function About() {
     return (
         <section className="text-left space-y-6">
             <div className="text-lg font-semibold">
-                <Title children={"About Me."} />
+                <Title>About Me.</Title>
             </div>
             <div className="border-l-2 border-gray-500 space-y-4">
                 <div>
